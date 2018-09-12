@@ -82,8 +82,9 @@
             // 查看ToolStripMenuItem
             // 
             this.查看ToolStripMenuItem.Name = "查看ToolStripMenuItem";
-            this.查看ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.查看ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.查看ToolStripMenuItem.Text = "信息查看";
+            this.查看ToolStripMenuItem.Click += new System.EventHandler(this.查看ToolStripMenuItem_Click);
             // 
             // fISToolStripMenuItem
             // 

@@ -44,6 +44,7 @@ namespace PLC_数据采集系统_V1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //左下角显示状态连接的信息
             lianjie = new OracleConnection(strcon);
             lianjie.Open();
             if (lianjie.State == ConnectionState.Open)
@@ -52,6 +53,16 @@ namespace PLC_数据采集系统_V1
                 lianjie.Close();
             }
 
+            //左下角显示时间的信息
+            toolStripStatusLabel4.Text = DateTime.Now.ToString();
+
+        }
+
+        private void 查看ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Plc_Ip_ethan frm2 = new Plc_Ip_ethan();
+            frm2.Show();
+            frm2.MdiParent = this;
         }
     }
 }
