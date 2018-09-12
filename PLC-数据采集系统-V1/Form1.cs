@@ -34,11 +34,24 @@ namespace PLC_数据采集系统_V1
         private void 检查连接ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lianjie = new OracleConnection(strcon);
+            lianjie.Open();
             if(lianjie.State==ConnectionState.Open)
             {
                 MessageBox.Show("数据库连接正常！");
                 lianjie.Close();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lianjie = new OracleConnection(strcon);
+            lianjie.Open();
+            if (lianjie.State == ConnectionState.Open)
+            {
+                toolStripStatusLabel2.Text = "已经连接";
+                lianjie.Close();
+            }
+
         }
     }
 }
