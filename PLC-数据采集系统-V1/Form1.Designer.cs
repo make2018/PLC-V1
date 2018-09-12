@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.数据库信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.检查连接ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.任意显示表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pLCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fISToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,7 +41,8 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.任意显示表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eFOracleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.查看信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +52,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.数据库信息ToolStripMenuItem,
             this.pLCToolStripMenuItem,
-            this.fISToolStripMenuItem});
+            this.fISToolStripMenuItem,
+            this.eFOracleToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 25);
@@ -69,9 +72,16 @@
             // 检查连接ToolStripMenuItem
             // 
             this.检查连接ToolStripMenuItem.Name = "检查连接ToolStripMenuItem";
-            this.检查连接ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.检查连接ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.检查连接ToolStripMenuItem.Text = "检查连接";
             this.检查连接ToolStripMenuItem.Click += new System.EventHandler(this.检查连接ToolStripMenuItem_Click);
+            // 
+            // 任意显示表ToolStripMenuItem
+            // 
+            this.任意显示表ToolStripMenuItem.Name = "任意显示表ToolStripMenuItem";
+            this.任意显示表ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.任意显示表ToolStripMenuItem.Text = "任意显示表";
+            this.任意显示表ToolStripMenuItem.Click += new System.EventHandler(this.任意显示表ToolStripMenuItem_Click);
             // 
             // pLCToolStripMenuItem
             // 
@@ -140,12 +150,20 @@
             this.toolStripStatusLabel4.Size = new System.Drawing.Size(131, 17);
             this.toolStripStatusLabel4.Text = "toolStripStatusLabel4";
             // 
-            // 任意显示表ToolStripMenuItem
+            // eFOracleToolStripMenuItem
             // 
-            this.任意显示表ToolStripMenuItem.Name = "任意显示表ToolStripMenuItem";
-            this.任意显示表ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.任意显示表ToolStripMenuItem.Text = "任意显示表";
-            this.任意显示表ToolStripMenuItem.Click += new System.EventHandler(this.任意显示表ToolStripMenuItem_Click);
+            this.eFOracleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.查看信息ToolStripMenuItem});
+            this.eFOracleToolStripMenuItem.Name = "eFOracleToolStripMenuItem";
+            this.eFOracleToolStripMenuItem.Size = new System.Drawing.Size(76, 21);
+            this.eFOracleToolStripMenuItem.Text = "EF_Oracle";
+            // 
+            // 查看信息ToolStripMenuItem
+            // 
+            this.查看信息ToolStripMenuItem.Name = "查看信息ToolStripMenuItem";
+            this.查看信息ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.查看信息ToolStripMenuItem.Text = "查看信息";
+            this.查看信息ToolStripMenuItem.Click += new System.EventHandler(this.查看信息ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -183,6 +201,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.ToolStripMenuItem 任意显示表ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eFOracleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 查看信息ToolStripMenuItem;
     }
 }
 

@@ -32,12 +32,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\oracle\product\10.2.0\client_1\BIN\Oracle.DataAccess.dll</HintPath>
     </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.VsDevTools.EntityFramework.15.0, Version=6.122.1.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="Oracle.Web, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +66,15 @@
     </Compile>
     <Compile Include="Any_View_ethan.Designer.cs">
       <DependentUpon>Any_View_ethan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BODYINFOL200.cs">
+      <DependentUpon>webkf_ethan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_Oracle_ethan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EF_Oracle_ethan.Designer.cs">
+      <DependentUpon>EF_Oracle_ethan.cs</DependentUpon>
     </Compile>
     <Compile Include="FIS_Info.cs">
       <SubType>Form</SubType>
@@ -75,8 +96,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="webkf_ethan.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>webkf_ethan.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="webkf_ethan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>webkf_ethan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="webkf_ethan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>webkf_ethan.edmx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Any_View_ethan.resx">
       <DependentUpon>Any_View_ethan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EF_Oracle_ethan.resx">
+      <DependentUpon>EF_Oracle_ethan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FIS_Info.resx">
       <DependentUpon>FIS_Info.cs</DependentUpon>
@@ -96,6 +135,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,9 +145,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="webkf_ethan.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>webkf_ethan.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="webkf_ethan.edmx.diagram">
+      <DependentUpon>webkf_ethan.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="webkf_ethan.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>webkf_ethan.Context.cs</LastGenOutput>
+      <DependentUpon>webkf_ethan.edmx</DependentUpon>
+    </Content>
+    <Content Include="webkf_ethan.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>webkf_ethan.edmx</DependentUpon>
+      <LastGenOutput>webkf_ethan.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

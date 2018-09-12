@@ -71,5 +71,12 @@ namespace PLC_数据采集系统_V1
             frm3.Show();
             frm3.MdiParent = this;
         }
+
+        private void 查看信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EF_Oracle_ethan frm4 = new EF_Oracle_ethan();
+            frm4.Show();
+            frm4.MdiParent = this;
+        }
     }
 }
