@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Any_View_ethan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Any_View_ethan.Designer.cs">
+      <DependentUpon>Any_View_ethan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FIS_Info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Any_View_ethan.resx">
+      <DependentUpon>Any_View_ethan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FIS_Info.resx">
       <DependentUpon>FIS_Info.cs</DependentUpon>
     </EmbeddedResource>

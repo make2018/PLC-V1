@@ -64,5 +64,12 @@ namespace PLC_数据采集系统_V1
             frm2.Show();
             frm2.MdiParent = this;
         }
+
+        private void 任意显示表ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Any_View_ethan frm3 = new Any_View_ethan();
+            frm3.Show();
+            frm3.MdiParent = this;
+        }
     }
 }

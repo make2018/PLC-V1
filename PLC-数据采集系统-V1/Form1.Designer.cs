@@ -40,6 +40,7 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.任意显示表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +60,8 @@
             // 数据库信息ToolStripMenuItem
             // 
             this.数据库信息ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.检查连接ToolStripMenuItem});
+            this.检查连接ToolStripMenuItem,
+            this.任意显示表ToolStripMenuItem});
             this.数据库信息ToolStripMenuItem.Name = "数据库信息ToolStripMenuItem";
             this.数据库信息ToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
             this.数据库信息ToolStripMenuItem.Text = "数据库";
@@ -82,7 +84,7 @@
             // 查看ToolStripMenuItem
             // 
             this.查看ToolStripMenuItem.Name = "查看ToolStripMenuItem";
-            this.查看ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.查看ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.查看ToolStripMenuItem.Text = "信息查看";
             this.查看ToolStripMenuItem.Click += new System.EventHandler(this.查看ToolStripMenuItem_Click);
             // 
@@ -138,6 +140,13 @@
             this.toolStripStatusLabel4.Size = new System.Drawing.Size(131, 17);
             this.toolStripStatusLabel4.Text = "toolStripStatusLabel4";
             // 
+            // 任意显示表ToolStripMenuItem
+            // 
+            this.任意显示表ToolStripMenuItem.Name = "任意显示表ToolStripMenuItem";
+            this.任意显示表ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.任意显示表ToolStripMenuItem.Text = "任意显示表";
+            this.任意显示表ToolStripMenuItem.Click += new System.EventHandler(this.任意显示表ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -173,6 +182,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.ToolStripMenuItem 任意显示表ToolStripMenuItem;
     }
 }
 
