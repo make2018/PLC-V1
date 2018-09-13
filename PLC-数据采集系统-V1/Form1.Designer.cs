@@ -66,14 +66,14 @@
             this.检查连接ToolStripMenuItem,
             this.任意显示表ToolStripMenuItem});
             this.数据库信息ToolStripMenuItem.Name = "数据库信息ToolStripMenuItem";
-            this.数据库信息ToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
-            this.数据库信息ToolStripMenuItem.Text = "数据库";
+            this.数据库信息ToolStripMenuItem.Size = new System.Drawing.Size(96, 21);
+            this.数据库信息ToolStripMenuItem.Text = "数据库（&AA）";
             // 
             // 检查连接ToolStripMenuItem
             // 
             this.检查连接ToolStripMenuItem.Name = "检查连接ToolStripMenuItem";
-            this.检查连接ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.检查连接ToolStripMenuItem.Text = "检查连接";
+            this.检查连接ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.检查连接ToolStripMenuItem.Text = "检查连接(&AA)";
             this.检查连接ToolStripMenuItem.Click += new System.EventHandler(this.检查连接ToolStripMenuItem_Click);
             // 
             // 任意显示表ToolStripMenuItem
@@ -175,7 +175,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "PLC-数据采集系统-V1";
+            this.Text = "      ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
