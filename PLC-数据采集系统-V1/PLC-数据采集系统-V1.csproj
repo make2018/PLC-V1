@@ -67,9 +67,6 @@
     <Compile Include="Any_View_ethan.Designer.cs">
       <DependentUpon>Any_View_ethan.cs</DependentUpon>
     </Compile>
-    <Compile Include="BODYINFOL200.cs">
-      <DependentUpon>webkf_ethan.tt</DependentUpon>
-    </Compile>
     <Compile Include="EF_Oracle_ethan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,21 +93,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="webkf_ethan.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>webkf_ethan.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="webkf_ethan.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>webkf_ethan.tt</DependentUpon>
-    </Compile>
-    <Compile Include="webkf_ethan.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>webkf_ethan.edmx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Any_View_ethan.resx">
       <DependentUpon>Any_View_ethan.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,28 +127,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="webkf_ethan.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>webkf_ethan.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="webkf_ethan.edmx.diagram">
-      <DependentUpon>webkf_ethan.edmx</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="webkf_ethan.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>webkf_ethan.Context.cs</LastGenOutput>
-      <DependentUpon>webkf_ethan.edmx</DependentUpon>
-    </Content>
-    <Content Include="webkf_ethan.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>webkf_ethan.edmx</DependentUpon>
-      <LastGenOutput>webkf_ethan.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

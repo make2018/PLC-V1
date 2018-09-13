@@ -22,7 +22,7 @@ namespace PLC_数据采集系统_V1
 
         private void EF_Oracle_ethan_Load(object sender, EventArgs e)
         {
-            using (webkf_ethan_Entities db = new webkf_ethan_Entities())
+            using (Entities db = new Entities())
             {
                      dataGridView1.DataSource = db.BODYINFOL200.ToList();
             }
